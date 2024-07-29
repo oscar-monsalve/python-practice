@@ -24,7 +24,7 @@ def ask_year() -> int:
             print(f"{user_input} is not an integer. A year must be an integer number.\n\n")
 
 
-def is_leap(input: int) -> str:
+def is_leap(input: int) -> None:
     if input % 100 == 0:
         if input % 400 != 0:
             return print(f"{input} is not a leap year. It is not evenly divisible by 400.")
