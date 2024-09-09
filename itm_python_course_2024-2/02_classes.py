@@ -2,6 +2,11 @@
 
 # Ejemplo con movimiento rectilineo uniforme (MRU) y movimiento rectilineo uniformemente acelerado (MRUA).
 
+import matplotlib.pyplot as plt
+import scienceplots
+plt.style.use(["science", "notebook", "grid"])
+
+
 class Particula:
     # Definir el constructor de la clase para una partícula para su estudio cinemático.
     def __init__(self, xi, vi, a):
@@ -16,6 +21,9 @@ class Particula:
     # Crear métodos que retornen los parámetros iniciales de la partícula.
     def get_xi(self):
         return self.xi
+
+    def get_xf(self):
+        return self.xf
 
     def get_vi(self):
         return self.vi
@@ -42,9 +50,30 @@ class Particula:
         return self.vf
 
 
+# Inheritance (herencia)
+# class Persona():
+#     def __init__(self, nombre, documento, edad):
+#         self.nombre = nombre
+#         self.documento = documento
+#         self.edad = edad
+#
+#     def ocupacion(self, profesion):
+#         print(f"{self.nombre} es {self.profesion}")
+#
+#
+# # Inherit from the class "Persona" to create a new class "Estudiante"
+# class Estudiante(Persona):
+#     def __init__(self, universidad):
+#         self.universidad = universidad
+#
+#
+# persona1 = Persona("carlos", 123, 23)
+# estudiante1 = Estudiante("Oscar", 321, 20)
+
+
 # Crear los objetos (partículas) de la clase
-p1 = Particula(0, 2, 9.8)  # p1 es el auto que inicia desde el origen de coordenadas con una vi != 0
-p2 = Particula(2, 3, 0)  # p2 es un camión que inicia desde el reposo pero a 2 metros desde el origen
+px = Particula(0, 0.7, 0)  # p1 es el auto que inicia desde el origen de coordenadas con una vi != 0
+py = Particula(45, 0.7, -9.8)  # p2 es un camión que inicia desde el reposo pero a 2 metros desde el origen
 
 # # Usar la notación de punto "." para acceder a los métodos de una clase.
 # print(f"La posición inicial de la partícula es: {p1.get_xi()} m")
@@ -62,10 +91,10 @@ p2 = Particula(2, 3, 0)  # p2 es un camión que inicia desde el reposo pero a 2 
 t = 0
 
 while True:
-    d = abs(p1.move(t) - p2.move(t))
+    d = abs(px.move(t) - py.move(t))
     if d < 0.5:
-        print(f"Los autos se encontraron en la coordenada x: {p1.xf}, p1")
-        print(f"Los autos se encontraron en la coordenada x: {p2.xf}, p2")
+        print(f"Los autos se encontraron en la coordenada x: {px.xf}, p1")
+        print(f"Los autos se encontraron en la coordenada x: {py.xf}, p2")
         print(f"Se encuentran en t: {t} s")
         break
 
@@ -73,3 +102,19 @@ while True:
     if t > 1000:
         print(f"p1 y p2 no se encontraron en un lapso de tiempo de {t}")
         break
+
+# Example of plotting
+x = list()
+y = list()
+
+for t in range(10):
+    x.append(px.move(t))
+    y.append(py.move(t))
+
+plt.plot(x, y)
+plt.xlabel("x (m)")
+plt.ylabel("y (m)")
+plt.show()
+
+
+# todo: crear un archivo de texto donde se almacenen los datos de t,x,y con cada simulación realizada.

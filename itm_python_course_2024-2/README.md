@@ -14,9 +14,11 @@ ITM course: Python for professors II.
 - [ ] -Pandas library.
 - [ ] Keras library.
 
+# Retos
+
 ## Reto clase 1
 
-- [ ] Comparador de RGB
+- [x] Comparador de RGB
 
 ## Reto clase 2
 
