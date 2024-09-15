@@ -6,3 +6,7 @@ CodigoEstacion,NombreEstacion,Latitud,Longitud,Altitud,Categoria,Entidad,AreaOpe
 26205080,ALDEA LA [26205080],6.3410555560,-75.70094444,1737,Meteorológica Especial,INSTITUTO DE HIDROLOGIA METEOROLOGIA Y ESTUDIOS AMBIENTALES,Area Operativa 01 - Antioquia-Chocó,Antioquia,Medellín,15/09/1990 00:00,,TEMPERATURA,TMX_CON,Temperatura máxima diaria,Diaria,2023-05-01 00:00,26.6,50,,900
 26205080,ALDEA LA [26205080],6.3410555560,-75.70094444,1737,Meteorológica Especial,INSTITUTO DE HIDROLOGIA METEOROLOGIA Y ESTUDIOS AMBIENTALES,Area Operativa 01 - Antioquia-Chocó,Antioquia,Medellín,15/09/1990 00:00,,TEMPERATURA,TMX_CON,Temperatura máxima diaria,Diaria,2023-05-02 00:00,27.8,50,,900
 26205080,ALDEA LA [26205080],6.3410555560,-75.70094444,1737,Meteorológica Especial,INSTITUTO DE HIDROLOGIA METEOROLOGIA Y ESTUDIOS AMBIENTALES,Area Operativa 01 - Antioquia-Chocó,Antioquia,Medellín,15/09/1990 00:00,,TEMPERATURA,TMX_CON,Temperatura máxima diaria,Diaria,2023-05-03 00:00,27.6,50,,900
+The file has been used 1 times
+The file has been used 1 times
+The file has been used 1 times
+The file has been used 1 times

@@ -104,10 +104,12 @@ while True:
         break
 
 # Example of plotting
+time = list()
 x = list()
 y = list()
 
 for t in range(10):
+    time.append(t)
     x.append(px.move(t))
     y.append(py.move(t))
 
@@ -118,3 +120,17 @@ plt.show()
 
 
 # todo: crear un archivo de texto donde se almacenen los datos de t,x,y con cada simulación realizada.
+
+with open("02_reto2_particle_data.txt", "w") as file:
+    file.write("t:\n")
+    for t in time:
+        file.write(f"{str(t)}\n")
+
+    file.write("x:\n")
+    for x in x:
+        file.write(f"{str(x)}\n")
+
+    file.write("y:\n")
+    for y in y:
+        file.write(f"{str(y)}\n")
+    file.write("t\n")
