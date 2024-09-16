@@ -1,0 +1,5 @@
+Implementar el módulo tkinder pora crear una interfaz de usuario para integrar el cálculo de la trayectoria parabólica:
+
+- Preguntar por valores iniciales.
+- Botón de calcular y mostrar resultados.
+- Botón para graficar el resultado de t vs. posición.

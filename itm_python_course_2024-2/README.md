@@ -5,9 +5,9 @@ ITM course: Python for professors II.
 
 - [x] Functions. (Class 1)
 - [x] Classes.
-- [ ] OOP.
-- [ ] Exceptions.
-- [ ] Ficheros.
+- [x] OOP.
+- [x] Exceptions.
+- [x] Ficheros.
 - [ ] Modules and packages.
 - [ ] Matplotlib library.
 - [ ] Numpy library.
