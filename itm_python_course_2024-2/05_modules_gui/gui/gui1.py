@@ -6,7 +6,6 @@ window = tk.Tk()
 
 def write() -> None:
     print(f"Este es el texto de entrada {text_in}")
-    return text_out
 
 # TODO: make an array of button from 0 to 9 as in a calculator.
 # lbl = tk.Label(window, text="Ingrese los parámetros")
@@ -22,7 +21,6 @@ def write() -> None:
 text_in = tk.StringVar()
 text_out = tk.StringVar()
 
-
 window.title("Calculador de tiro parabólico")
 lbl = tk.Label(window, text="Ingrese los parámetros")
 lbl.grid(column=0, row=0)
@@ -34,9 +32,9 @@ texto_entrada = tk.Entry(window)
 texto_entrada.grid(column=2, row=0)
 texto_entrada.config(textvariable=text_in)
 
-lbl1 = tk.Label(window, text="Defecto")
-lbl1.grid(column=1, row=2)
-lbl1.config(textvariable=text_out)
+# lbl1 = tk.Label(window, text="Defecto")
+# lbl1.grid(column=1, row=2)
+# lbl1.config(textvariable=text_out)
 
 window.geometry("350x200")
 window.mainloop()
