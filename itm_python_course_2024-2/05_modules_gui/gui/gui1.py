@@ -7,16 +7,6 @@ window = tk.Tk()
 def write() -> None:
     print(f"Este es el texto de entrada {text_in}")
 
-# TODO: make an array of button from 0 to 9 as in a calculator.
-# lbl = tk.Label(window, text="Ingrese los parámetros")
-# lbl.grid(column=0, row=0)
-# for i in range(3):
-#     btn = tk.Button(window, text=str(i))
-#     btn.grid(column=i, row=0)
-#     for k in range(3):
-#         btn = tk.Button(window, text=str(k))
-#         btn.grid(column=k, row=i)
-
 
 text_in = tk.StringVar()
 text_out = tk.StringVar()
