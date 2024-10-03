@@ -1,13 +1,17 @@
 import re
 
-file_name = "sample.txt"
+file_name = "actual_data.txt"
 
 with open(file_name, "r") as file:
     numbers = list()
     for i in file:
         lines = i.rstrip()
-        x = re.findall(r"([0-9]+)", lines)
+        x = re.findall("([0-9]+)", lines)
         if len(x) > 0:
-            numbers.append(x)
+            for k in x:
+                numbers.append(int(k))
 
-    print(numbers)
+    sum = 0
+    for i in numbers:
+        sum += i
+    print(sum)
